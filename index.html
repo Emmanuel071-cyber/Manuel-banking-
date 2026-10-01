@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="Manuel Banking — simple, secure and modern digital banking."
+    >
+
+    <title>Manuel Banking — Banking Made Simple</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="site-header" id="siteHeader">
+
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="brand">
+                <span class="brand-mark">M</span>
+                <span>Manuel<span class="brand-dot">.</span></span>
+            </a>
+
+            <button
+                class="mobile-toggle"
+                id="mobileToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navMenu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-menu" id="navMenu">
+
+                <a href="#home">Home</a>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#security">Security</a>
+                <a href="#faq">FAQ</a>
+
+                <div class="nav-actions">
+
+                    <button
+                        class="theme-toggle"
+                        id="themeToggle"
+                        aria-label="Switch theme"
+                        title="Switch theme"
+                    >
+                        <span id="themeIcon">☾</span>
+                    </button>
+
+                    <button
+                        class="btn btn-outline"
+                        data-auth="login"
+                    >
+                        Login
+                    </button>
+
+                    <button
+                        class="btn btn-primary"
+                        data-auth="register"
+                    >
+                        Open account
+                    </button>
+
+                </div>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-grid">
+
+                <div class="hero-copy reveal">
+
+                    <div class="eyebrow">
+                        <span class="eyebrow-dot"></span>
+                        Modern banking, built for you
+                    </div>
+
+                    <h1>
+                        Your money.
+                        <span>Your way.</span>
+                    </h1>
+
+                    <p>
+                        Manage your money, send payments, track your
+                        spending and stay in control — all from one
+                        beautifully simple banking experience.
+                    </p>
+
+                    <div class="hero-actions">
+
+                        <button
+                            class="btn btn-primary btn-large"
+                            data-auth="register"
+                        >
+                            Open an account
+                            <span>→</span>
+                        </button>
+
+                        <a
+                            href="#features"
+                            class="btn btn-ghost btn-large"
+                        >
+                            Explore features
+                        </a>
+
+                    </div>
+
+                    <div class="hero-trust">
+
+                        <div class="avatar-stack">
+                            <span>J</span>
+                            <span>A</span>
+                            <span>D</span>
+                            <span>+</span>
+                        </div>
+
+                        <div>
+                            <strong>Built for everyday banking</strong>
+                            <small>Simple. Secure. Flexible.</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- DASHBOARD MOCKUP -->
+
+                <div class="dashboard-area reveal">
+
+                    <div class="floating-card transfer-card">
+
+                        <div class="floating-icon green-icon">
+                            ↑
+                        </div>
+
+                        <div>
+                            <strong>Transfer complete</strong>
+                            <small>₦85,000 sent</small>
+                        </div>
+
+                        <span class="check">✓</span>
+
+                    </div>
+
+
+                    <div class="dashboard-card">
+
+                        <div class="dashboard-top">
+
+                            <div>
+                                <small>Good morning, Manuel</small>
+                                <h3>My account</h3>
+                            </div>
+
+                            <button class="profile-circle">
+                                M
+                            </button>
+
+                        </div>
+
+
+                        <div class="balance-card">
+
+                            <div class="balance-label">
+                                <span>Available balance</span>
+                                <button id="balanceToggle">
+                                    ●●●
+                                </button>
+                            </div>
+
+                            <strong
+                                id="balanceAmount"
+                            >
+                                ₦1,284,500.00
+                            </strong>
+
+                            <div class="balance-bottom">
+
+                                <span>
+                                    +₦250,000 this month
+                                </span>
+
+                                <span class="positive">
+                                    +12.8%
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="quick-actions">
+
+                            <button>
+                                <span>↑</span>
+                                Send
+                            </button>
+
+                            <button>
+                                <span>＋</span>
+                                Add money
+                            </button>
+
+                            <button>
+                                <span>↓</span>
+                                Request
+                            </button>
+
+                            <button>
+                                <span>•••</span>
+                                More
+                            </button>
+
+                        </div>
+
+
+                        <div class="transactions-header">
+
+                            <strong>Recent activity</strong>
+
+                            <a href="#features">
+                                View all
+                            </a>
+
+                        </div>
+
+
+                        <div class="transaction">
+
+                            <div class="transaction-logo netflix">
+                                N
+                            </div>
+
+                            <div class="transaction-info">
+                                <strong>Netflix</strong>
+                                <small>Entertainment · Today</small>
+                            </div>
+
+                            <strong class="expense">
+                                -₦5,000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="transaction">
+
+                            <div class="transaction-logo salary">
+                                ↓
+                            </div>
+
+                            <div class="transaction-info">
+                                <strong>Salary</strong>
+                                <small>Income · Yesterday</small>
+                            </div>
+
+                            <strong class="income">
+                                +₦250,000
+                            </strong>
+
+                        </div>
+
+
+                        <div class="transaction">
+
+                            <div class="transaction-logo shop">
+                                S
+                            </div>
+
+                            <div class="transaction-info">
+                                <strong>Shoprite</strong>
+                                <small>Shopping · Yesterday</small>
+                            </div>
+
+                            <strong class="expense">
+                                -₦32,450
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card savings-card">
+
+                        <div class="savings-icon">
+                            ↗
+                        </div>
+
+                        <div>
+                            <small>Monthly savings</small>
+                            <strong>₦180,000</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRUST STRIP ================= -->
+
+        <section class="trust-strip">
+
+            <div class="container trust-content">
+
+                <span>Simple banking for</span>
+
+                <strong>EVERYDAY LIFE</strong>
+                <strong>BUSINESS</strong>
+                <strong>FREEDOM</strong>
+                <strong>YOUR FUTURE</strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FEATURES ================= -->
+
+        <section
+            class="section"
+            id="features"
+        >
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        01 — FEATURES
+                    </span>
+
+                    <h2>
+                        Everything you need.
+                        <em>Nothing you don't.</em>
+                    </h2>
+
+                    <p>
+                        Powerful banking tools without the unnecessary
+                        complexity.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-grid">
+
+                    <article class="feature-card feature-large reveal">
+
+                        <div class="feature-top">
+                            <span class="feature-icon">↗</span>
+                            <span>01</span>
+                        </div>
+
+                        <h3>
+                            Send money in seconds.
+                        </h3>
+
+                        <p>
+                            Transfer money to friends, family and
+                            businesses without complicated processes.
+                        </p>
+
+                        <div class="transfer-preview">
+
+                            <div>
+                                <small>Transfer</small>
+                                <strong>₦85,000</strong>
+                            </div>
+
+                            <span>→</span>
+
+                            <div class="recipient">
+                                JD
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="feature-card reveal">
+
+                        <div class="feature-top">
+                            <span class="feature-icon">₦</span>
+                            <span>02</span>
+                        </div>
+
+                        <h3>
+                            Understand your spending.
+                        </h3>
+
+                        <p>
+                            See your transactions clearly and keep
+                            your spending organised.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card reveal">
+
+                        <div class="feature-top">
+                            <span class="feature-icon">▣</span>
+                            <span>03</span>
+                        </div>
+
+                        <h3>
+                            Your card, your control.
+                        </h3>
+
+                        <p>
+                            Manage your card and payment preferences
+                            from one place.
+                        </p>
+
+                    </article>
+
+
+                    <article class="feature-card reveal">
+
+                        <div class="feature-top">
+                            <span class="feature-icon">⌁</span>
+                            <span>04</span>
+                        </div>
+
+                        <h3>
+                            Banking wherever you are.
+                        </h3>
+
+                        <p>
+                            Access your banking experience across
+                            desktop, tablet and mobile.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= HOW IT WORKS ================= -->
+
+        <section
+            class="section section-soft"
+            id="how-it-works"
+        >
+
+            <div class="container">
+
+                <div class="section-heading centered reveal">
+
+                    <span class="section-number">
+                        02 — HOW IT WORKS
+                    </span>
+
+                    <h2>
+                        From signup to
+                        <em>simple.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="process-grid">
+
+                    <article class="process-step reveal">
+
+                        <span>01</span>
+
+                        <div class="process-icon">
+                            +
+                        </div>
+
+                        <h3>Open your account</h3>
+
+                        <p>
+                            Create your account in just a few
+                            straightforward steps.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step reveal">
+
+                        <span>02</span>
+
+                        <div class="process-icon">
+                            ₦
+                        </div>
+
+                        <h3>Add your money</h3>
+
+                        <p>
+                            Fund your account and get ready for
+                            everyday banking.
+                        </p>
+
+                    </article>
+
+
+                    <article class="process-step reveal">
+
+                        <span>03</span>
+
+                        <div class="process-icon">
+                            →
+                        </div>
+
+                        <h3>Start banking</h3>
+
+                        <p>
+                            Send, receive and manage your money
+                            from one place.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="container">
+
+                <div class="stats-grid">
+
+                    <div class="stat reveal">
+                        <strong>24/7</strong>
+                        <span>Access to your account</span>
+                    </div>
+
+                    <div class="stat reveal">
+                        <strong>01</strong>
+                        <span>Simple banking experience</span>
+                    </div>
+
+                    <div class="stat reveal">
+                        <strong>100%</strong>
+                        <span>Digital-first experience</span>
+                    </div>
+
+                    <div class="stat reveal">
+                        <strong>∞</strong>
+                        <span>Possibilities for your money</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SECURITY ================= -->
+
+        <section
+            class="security-section"
+            id="security"
+        >
+
+            <div class="container security-grid">
+
+                <div class="security-visual reveal">
+
+                    <div class="shield">
+                        ✓
+                    </div>
+
+                    <div class="security-orbit orbit-one"></div>
+                    <div class="security-orbit orbit-two"></div>
+
+                </div>
+
+
+                <div class="security-copy reveal">
+
+                    <span class="section-number">
+                        03 — SECURITY
+                    </span>
+
+                    <h2>
+                        Your money deserves
+                        <em>serious protection.</em>
+                    </h2>
+
+                    <p>
+                        Security should never feel like an extra step.
+                        Manuel Banking is designed around a secure and
+                        privacy-conscious experience.
+                    </p>
+
+
+                    <div class="security-list">
+
+                        <div>
+                            <span>01</span>
+
+                            <div>
+                                <strong>Secure authentication</strong>
+                                <p>
+                                    Keep your account protected
+                                    with secure login flows.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>02</span>
+
+                            <div>
+                                <strong>Transaction visibility</strong>
+                                <p>
+                                    Know what happens with your
+                                    money through clear activity.
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <span>03</span>
+
+                            <div>
+                                <strong>Privacy-conscious design</strong>
+                                <p>
+                                    Your financial experience should
+                                    be designed with privacy in mind.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TESTIMONIALS ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        04 — EXPERIENCE
+                    </span>
+
+                    <h2>
+                        Banking that feels
+                        <em>refreshingly simple.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="testimonial-grid">
+
+                    <article class="testimonial reveal">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “The experience feels clean and
+                            straightforward. I can actually find
+                            what I need without getting lost.”
+                        </blockquote>
+
+                        <div class="person">
+                            <span>AO</span>
+
+                            <div>
+                                <strong>Amaka O.</strong>
+                                <small>Everyday customer</small>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial reveal">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Everything important is right there.
+                            The dashboard gives me a clear picture
+                            of my money.”
+                        </blockquote>
+
+                        <div class="person">
+                            <span>DK</span>
+
+                            <div>
+                                <strong>David K.</strong>
+                                <small>Business owner</small>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <article class="testimonial reveal">
+
+                        <div class="stars">
+                            ★★★★★
+                        </div>
+
+                        <blockquote>
+                            “Simple design, clear information and
+                            a banking experience that doesn't feel
+                            overwhelming.”
+                        </blockquote>
+
+                        <div class="person">
+                            <span>MT</span>
+
+                            <div>
+                                <strong>Maya T.</strong>
+                                <small>Digital customer</small>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FAQ ================= -->
+
+        <section
+            class="section section-soft"
+            id="faq"
+        >
+
+            <div class="container faq-layout">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-number">
+                        05 — FAQ
+                    </span>
+
+                    <h2>
+                        Questions,
+                        <em>answered.</em>
+                    </h2>
+
+                    <p>
+                        Everything you need to know about
+                        the Manuel Banking experience.
+                    </p>
+
+                </div>
+
+
+                <div class="faq-list">
+
+                    <div class="faq-item reveal">
+
+                        <button
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                What is Manuel Banking?
+                            </span>
+
+                            <b>+</b>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Manuel Banking is a digital banking
+                                website concept focused on making
+                                everyday financial management simple,
+                                clear and accessible.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item reveal">
+
+                        <button
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Can I open an account online?
+                            </span>
+
+                            <b>+</b>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                The interface includes an online
+                                registration experience. A production
+                                banking platform would connect this
+                                interface to a secure backend and
+                                identity-verification system.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item reveal">
+
+                        <button
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Can I use it on my phone?
+                            </span>
+
+                            <b>+</b>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                Yes. The website is designed
+                                responsively from 320px mobile
+                                screens through large desktop displays.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="faq-item reveal">
+
+                        <button
+                            class="faq-question"
+                            aria-expanded="false"
+                        >
+                            <span>
+                                Is this connected to a real bank?
+                            </span>
+
+                            <b>+</b>
+
+                        </button>
+
+                        <div class="faq-answer">
+
+                            <p>
+                                No. This frontend project is a
+                                professional banking UI demonstration.
+                                Real financial functionality requires
+                                secure backend infrastructure,
+                                authentication, databases and appropriate
+                                regulatory compliance.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FINAL CTA ================= -->
+
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="final-cta reveal">
+
+                    <div>
+
+                        <span class="section-number">
+                            READY WHEN YOU ARE
+                        </span>
+
+                        <h2>
+                            Make your money work
+                            <em>your way.</em>
+                        </h2>
+
+                        <p>
+                            Experience a simpler approach to
+                            digital banking.
+                        </p>
+
+                    </div>
+
+                    <button
+                        class="btn btn-light btn-large"
+                        data-auth="register"
+                    >
+                        Open an account →
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div>
+
+                <a href="#home" class="brand footer-brand">
+                    <span class="brand-mark">M</span>
+                    <span>
+                        Manuel<span class="brand-dot">.</span>
+                    </span>
+                </a>
+
+                <p>
+                    Modern banking designed around
+                    simplicity and control.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <strong>Product</strong>
+
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#security">Security</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <strong>Company</strong>
+
+                <a href="#home">About</a>
+                <a href="#faq">FAQ</a>
+                <a href="#home">Contact</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <strong>Legal</strong>
+
+                <a href="#home">Privacy</a>
+                <a href="#home">Terms</a>
+                <a href="#home">Cookies</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="container footer-bottom">
+
+            <span>
+                © <span id="currentYear"></span> Manuel Banking.
+                All rights reserved.
+            </span>
+
+            <span>
+                Designed for a better banking experience.
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= AUTH MODAL ================= -->
+
+    <div
+        class="modal"
+        id="authModal"
+        aria-hidden="true"
+    >
+
+        <div
+            class="modal-backdrop"
+            id="modalBackdrop"
+        ></div>
+
+
+        <div
+            class="auth-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="authTitle"
+        >
+
+            <button
+                class="modal-close"
+                id="modalClose"
+                aria-label="Close"
+            >
+                ×
+            </button>
+
+
+            <div class="auth-brand">
+
+                <span class="brand-mark">M</span>
+
+                <strong>
+                    Manuel<span>.</span>
+                </strong>
+
+            </div>
+
+
+            <div class="auth-tabs">
+
+                <button
+                    id="loginTab"
+                    class="auth-tab active"
+                >
+                    Login
+                </button>
+
+                <button
+                    id="registerTab"
+                    class="auth-tab"
+                >
+                    Register
+                </button>
+
+            </div>
+
+
+            <!-- LOGIN FORM -->
+
+            <form
+                id="loginForm"
+                class="auth-form"
+                novalidate
+            >
+
+                <div class="auth-heading">
+
+                    <h2 id="authTitle">
+                        Welcome back.
+                    </h2>
+
+                    <p>
+                        Login to your Manuel Banking account.
+                    </p>
+
+                </div>
+
+
+                <label for="loginEmail">
+                    Email address
+                </label>
+
+                <input
+                    id="loginEmail"
+                    type="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        id="loginPassword"
+                        type="password"
+                        placeholder="Enter your password"
+                        autocomplete="current-password"
+                        minlength="6"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-password="loginPassword"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <label class="checkbox-label">
+
+                        <input
+                            type="checkbox"
+                        >
+
+                        <span>Remember me</span>
+
+                    </label>
+
+                    <button
+                        type="button"
+                        class="text-button"
+                        id="forgotPassword"
+                    >
+                        Forgot password?
+                    </button>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                >
+                    Login →
+                </button>
+
+            </form>
+
+
+            <!-- REGISTER FORM -->
+
+            <form
+                id="registerForm"
+                class="auth-form hidden"
+                novalidate
+            >
+
+                <div class="auth-heading">
+
+                    <h2>
+                        Create your account.
+                    </h2>
+
+                    <p>
+                        Start your Manuel Banking journey.
+                    </p>
+
+                </div>
+
+
+                <label for="registerName">
+                    Full name
+                </label>
+
+                <input
+                    id="registerName"
+                    type="text"
+                    placeholder="Your full name"
+                    autocomplete="name"
+                    minlength="2"
+                    required
+                >
+
+
+                <label for="registerEmail">
+                    Email address
+                </label>
+
+                <input
+                    id="registerEmail"
+                    type="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    required
+                >
+
+
+                <label for="registerPassword">
+                    Password
+                </label>
+
+                <div class="password-field">
+
+                    <input
+                        id="registerPassword"
+                        type="password"
+                        placeholder="Create a password"
+                        autocomplete="new-password"
+                        minlength="6"
+                        required
+                    >
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-password="registerPassword"
+                    >
+                        Show
+                    </button>
+
+                </div>
+
+
+                <label class="checkbox-label terms-label">
+
+                    <input
+                        type="checkbox"
+                        required
+                    >
+
+                    <span>
+                        I agree to the terms and privacy policy.
+                    </span>
+
+                </label>
+
+
+                <button
+                    type="submit"
+                    class="btn btn-primary btn-full"
+                >
+                    Create account →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+
+    <div
+        class="toast"
+        id="toast"
+        role="status"
+        aria-live="polite"
+    ></div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
